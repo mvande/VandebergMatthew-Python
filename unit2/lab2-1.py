@@ -2,17 +2,22 @@
 #Period 2 Intro to Python
 
 def main():
-    #Print the sum of an integer and a float
-    print(1 + 6.3)
+    #Make an int and float then print the sum
+    int1 = 1
+    float1 = 6.3
+    print(int1 + float1)
 
-    #Print the typecasted sum of an integer and a float
-    print(int(1 + 5.4))
+    #Make an int and float then print the sum as an int using typecasting
+    int2 = 4
+    float2 = 5.4
+    print(int(int2 + float2))
 
     #Ask for a number input, cast it as an int, add the input to 5, 
     #typecast the sum as a string, and finally print "Results: <sum>"
     #A simplified version would be: print(5 + int(input("Enter a number: ")))
     print("Results: " 
-          + str(int(input("Enter a number: ")) + 5))
+          + str(int(input("Enter a number: ")) 
+          + 5))
 
     #Assign values to a bunch of variables 
     i = 100
