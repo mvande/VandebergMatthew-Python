@@ -2,21 +2,23 @@
 #Python
 #Period 2
 
-def main():
-    print("draw three boxes \n")
-    drawBoxes()
-    print()
-    drawBoxes()
-    print()
-    drawBoxes()
+#Obvious comments are obvious
 
-def drawTopBot():
+def main(): #Prints the title and then uses the drawBox function to print boxes
+    print("draw three boxes \n")
+    drawBox()
+    print()
+    drawBox()
+    print()
+    drawBox()
+
+def drawTopBot(): #Function to print the top and bottom of a box
     print("******")
 
-def drawSides():
+def drawSides(): #Function to print the sides of a box
     print("|    |")
 
-def drawBoxes():
+def drawBox(): #Uses the drawTopBot and drawSides functions to print a box
     drawTopBot()
     drawSides()
     drawSides()
