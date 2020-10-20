@@ -25,11 +25,12 @@ def main():
 #Then takes two objects from the list at random 
 #and returns the operation indicated by the operator parameter.
 def calcList(myList, mathOp):
+
+    #Creates two random indexes between zero and the length of myList
     index1 = randint(0, len(myList) - 1)
     index2 = randint(0, len(myList) - 1)
 
-    print("index1 = " + str(index1) + " | index2 = " + str(index2))
-
+    #If/elif/else statements determines which operation to perform and returns desired result
     if(mathOp == "+"):
         return(myList[index1] + myList[index2])
     elif(mathOp == "-"):
@@ -47,9 +48,11 @@ def calcList(myList, mathOp):
     else:
         return("Invalid arithmetic operator")
 
+#Function to calculate area given two dimensions
 def calcArea(lengthA, widthA):
     return(lengthA * widthA)
 
+#Function to calculate perimeter given two dimensions
 def calcPerim(lengthB, widthB):
     return(2 * (lengthB + widthB))
 
