@@ -6,7 +6,7 @@ class pet():
         self.petType = 'cage free pet'
 
     def whatIsIt(self):
-        print(self.name + ' ' + self.type + ' ' + self.breed + ' ' + self.petType)
+        print(self.type + ' ' + self.name + ' ' + self.breed + ' is a ' + self.petType)
 
 class cage():
     def __init__(self, type, danger):
