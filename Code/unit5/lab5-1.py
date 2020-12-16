@@ -2,7 +2,7 @@
 #Python
 #Period 2
 
-from Code.unit5.lab5Classes import * #Import everything from lab5Classes file
+from Code.unit5.lab5Classes import * #Import everything from lab5Classes file (remove 'Code' from import statement when testing)
 
 def main():
     myPet1 = pet('dog', 'Hanz', 'german shepard') #Create a new pet with the required info

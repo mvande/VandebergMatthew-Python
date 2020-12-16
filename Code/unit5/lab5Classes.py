@@ -27,3 +27,30 @@ class cage():
             print('this pet is dangerous')
         else:
             print('this pet is not dangerous')
+
+
+class pet1():
+    def __init__(self, color, name, hair):
+        self.type = 'house pet'
+        self.color = color
+        self.name = name
+        self.hair = hair
+
+    def activity(self):
+        return self.type + ' that walks on 4 legs'
+
+class dog(pet1):
+    def __init__(self, color, name, hair):
+        pet1.__init__(self, color, name, hair)
+        self.noise = 'barks'
+
+    def activity(self):
+        return self.type + ' that walks on 4 legs and ' + self.noise
+
+class cat(pet1):
+    def __init__(self, color, name, hair):
+        pet1.__init__(self, color, name, hair)
+        self.skill = 'hunts mice'
+
+    def activity(self):
+        return self.type + ' that walks on 4 legs and ' + self.skill
