@@ -45,7 +45,7 @@ class dog(pet1):
         self.noise = 'barks'
 
     def activity(self):
-        return self.type + ' that walks on 4 legs and ' + self.noise
+        return pet1.activity(self) + ' and ' + self.noise
 
 class cat(pet1):
     def __init__(self, color, name, hair):
@@ -53,4 +53,4 @@ class cat(pet1):
         self.skill = 'hunts mice'
 
     def activity(self):
-        return self.type + ' that walks on 4 legs and ' + self.skill
+        return pet1.activity(self) + ' and ' + self.skill
