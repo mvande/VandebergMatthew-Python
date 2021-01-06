@@ -30,6 +30,7 @@ class cage():
 
 
 class pet1():
+    #List out and assign parameters and attributes for pet1 class
     def __init__(self, color, name, hair):
         self.type = 'house pet'
         self.color = color
@@ -39,18 +40,24 @@ class pet1():
     def activity(self):
         return self.type + ' that walks on 4 legs'
 
+#dog class is a subclass of pet1
 class dog(pet1):
+    #Call the init function of the pet1 class while having an additional attribute of "noise"
     def __init__(self, color, name, hair):
         pet1.__init__(self, color, name, hair)
         self.noise = 'barks'
 
+    #Overrides activity function of pet1 superclass
     def activity(self):
         return pet1.activity(self) + ' and ' + self.noise
 
+#cat class is a subclass of pet1
 class cat(pet1):
+    #Call the init function of the pet1 class while having an additional attribute of "skill"
     def __init__(self, color, name, hair):
         pet1.__init__(self, color, name, hair)
         self.skill = 'hunts mice'
 
+    #Overrides activity function of pet1 superclass
     def activity(self):
         return pet1.activity(self) + ' and ' + self.skill
