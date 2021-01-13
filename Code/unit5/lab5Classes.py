@@ -2,6 +2,7 @@
 #Python
 #Period 2
 
+#lab5-1
 class pet():
     #List out and assign the pet class's parameters and attributes 
     def __init__(self, type, name, breed):
@@ -28,7 +29,7 @@ class cage():
         else:
             print('this pet is not dangerous')
 
-
+#lab5-2
 class pet1():
     #List out and assign parameters and attributes for pet1 class
     def __init__(self, color, name, hair):
@@ -61,3 +62,32 @@ class cat(pet1):
     #Overrides activity function of pet1 superclass
     def activity(self):
         return pet1.activity(self) + ' and ' + self.skill
+
+#lab5-3
+class grades():
+    def __init__(self, name, english, math, python, history):
+        self.__name = name
+        self.__english = english
+        self.__math = math
+        self.__python = python
+        self.__history = history
+
+    def getName(self):
+        return self.__name
+    def getEnglish(self):
+        return self.__english
+    def getMath(self):
+        return self.__math
+    def getPython(self):
+        return self.__python
+    def getHistory(self):
+        return self.__history
+
+    def setEnglish(self, newEng):
+        self.__english = newEng
+    def setMath(self, newMath):
+        self.__math = newMath
+    def setPython(self, newPy):
+        self.__python = newPy
+    def setHistory(self, newHistory):
+        self.__history = newHistory
