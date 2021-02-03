@@ -65,6 +65,7 @@ class cat(pet1):
 
 #lab5-3
 class grades():
+    #Initialize each grades object with correct parameters and assign them to private variables
     def __init__(self, name, english, math, python, history):
         self.__name = name
         self.__english = english
@@ -72,6 +73,7 @@ class grades():
         self.__python = python
         self.__history = history
 
+    #Functions to get each private value
     def getName(self):
         return self.__name
     def getEnglish(self):
@@ -83,6 +85,7 @@ class grades():
     def getHistory(self):
         return self.__history
 
+    #Functions to set each private value
     def setEnglish(self, newEng):
         self.__english = newEng
     def setMath(self, newMath):
